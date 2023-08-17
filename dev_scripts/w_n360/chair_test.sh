@@ -1,4 +1,5 @@
 #!/bin/bash
+
 nrCheckpoint="../checkpoints"
 nrDataRoot="../data_src"
 name='chair'
@@ -172,5 +173,4 @@ python3 test_ft.py \
         --vsize $vsize \
         --wcoord_query $wcoord_query \
         --max_o $max_o \
-        --debug
-
+        --debug 
