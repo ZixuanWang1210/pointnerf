@@ -153,7 +153,7 @@ class TtFtDataset(BaseDataset):
         self.define_transforms()
         self.build_init_metas()
         self.norm_w2c, self.norm_c2w = torch.eye(4, device="cuda", dtype=torch.float32), torch.eye(4, device="cuda", dtype=torch.float32)
-        self.near_far = np.array([opt.near_plane, opt.far_plane])
+        # self.near_far = np.array([opt.near_plane, opt.far_plane])
 
         self.intrinsic = self.get_instrinsic()
         img = Image.open(self.image_paths[0])
@@ -402,7 +402,7 @@ class TtFtDataset(BaseDataset):
             downintrinsic = copy.deepcopy(dintrinsic)
             downintrinsic[:2] = downintrinsic[:2] / 4
             proj_mat_l[:3, :4] = downintrinsic @ w2c[:3, :4]
-            proj_mats += [(proj_mat_l, self.near_far)]
+            proj_mats += [proj_mat_l]
 
         proj_mats = np.stack(proj_mats)
         intrinsics = np.stack(intrinsics)
@@ -523,7 +523,7 @@ class TtFtDataset(BaseDataset):
             mvs_images += [blackimg]
             alphas+= [alpha]
             imgs += [img]
-            proj_mat_ls, near_far = self.proj_mats[vid]
+            proj_mat_ls, near_far = self.proj_mats[id], np.array[2.0, 6.0]
             intrinsics.append(self.intrinsics[vid])
             w2cs.append(self.world2cams[vid])
             c2ws.append(self.cam2worlds[vid])
