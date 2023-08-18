@@ -119,7 +119,7 @@ lr_decay_exp=0.1
 #lr_policy="lambda"
 #lr_decay_iters=-1
 
-gpu_ids='2'
+gpu_ids='0'
 checkpoints_dir="${nrCheckpoint}/nerfsynth/"
 resume_dir="${nrCheckpoint}/init/dtu_dgt_d012_img0123_conf_agg2_32_dirclr20"
 

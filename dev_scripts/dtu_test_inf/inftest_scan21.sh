@@ -103,7 +103,7 @@ lr_policy="iter_exponential_decay"
 lr_decay_iters=30000
 lr_decay_exp=0.1
 
-gpu_ids='3'
+gpu_ids='0'
 checkpoints_dir="${nrCheckpoint}/dtu/"
 resume_dir="${nrCheckpoint}/init/dtu_dgt_d012_img0123_conf_color_dir_agg2"
 

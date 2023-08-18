@@ -80,7 +80,7 @@ random_sample='random'
 random_sample_size=110 #48 # 32 * 32 = 1024
 
 batch_size=1
-gpu_ids='3'
+gpu_ids='0'
 
 checkpoints_dir="${nrCheckpoint}/nerfsynth/"
 resume_dir="${nrCheckpoint}/init/dtu_dgt_d012_img0123_conf_agg2_32_dirclr20"

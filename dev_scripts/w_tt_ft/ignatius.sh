@@ -111,7 +111,7 @@ lr=0.0005 # 0.0005 #0.00015
 lr_policy="iter_exponential_decay"
 lr_decay_iters=1000000
 lr_decay_exp=0.1
-gpu_ids='1'
+gpu_ids='0'
 
 checkpoints_dir="${nrCheckpoint}/tanksntemples/"
 resume_dir="${nrCheckpoint}/init/dtu_dgt_d012_img0123_conf_agg2_32_dirclr20"

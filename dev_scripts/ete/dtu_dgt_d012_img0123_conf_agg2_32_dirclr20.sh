@@ -97,7 +97,7 @@ batch_size=1
 lr=0.0005 # 0.0005 #0.00015
 lr_policy="iter_exponential_decay"
 lr_decay_iters=500000
-gpu_ids='1'
+gpu_ids='0'
 checkpoints_dir="${nrCheckpoint}/init"
 resume_dir="${checkpoints_dir}/${name}"
 
