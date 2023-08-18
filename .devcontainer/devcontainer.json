@@ -1,7 +1,7 @@
 {
 	// replace them as you need
-	"name": "vgn",
-	"image": "wzx1210/pointnerf:v1.1.0",
+	"name": "pointnerf",
+	"image": "wzx1210/pointnerf:v2.0.0",
 
 	"features": {
 		// "ghcr.io/devcontainers/features/git:1": {},
