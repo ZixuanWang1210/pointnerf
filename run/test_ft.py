@@ -350,4 +350,10 @@ def main():
         test(model, test_dataset, Visualizer(test_opt), test_opt, test_bg_info, test_steps=resume_iter)
 
 if __name__ == '__main__':
+
     main()
+    # 清除 CUDA context 栈
+    import pycuda.driver as cuda
+    import pycuda.autoinit
+ 
+    cuda.Context.pop()
