@@ -7,11 +7,11 @@
 
 预训练模型和数据集正在上传百度网盘，还**未**上传完成
 
-没有测试从头训练模型部分的代码，测试中直接使用预训练的MVSNet作为checkpoint
+在测试中直接使用预训练的MVSNet作为checkpoint，没有测试从头训练模型的代码
 
 作者提供了很多数据集进行测试，但是代码的复用性较差，每个数据集都使用不同的python脚本处理，我检查并排除了**NeRF Synthetics**数据集相关py脚本中的bug，其他数据集暂时还没有处理（TanksAndTemple、scannet）
 
-可以保证的是，在本篇READNE中出现的所有命令都是经过测试且没有问题的
+可以确定的是，在本篇READNE中出现的所有命令都是经过测试且没有问题的
 
 ### 实验环境
 Docker-image：wzx1210/pointnerf:v2.0.0
@@ -63,6 +63,7 @@ pointnerf
 ```
 
 ### 运行测试
+#### 使用预训练的MVSNet，针对每个场景优化PointNeRF
 
 ```
     bash dev_scripts/w_n360/chair_test.sh
@@ -82,4 +83,3 @@ pointnerf
     bash dev_scripts/w_n360/mic_test.sh
     bash dev_scripts/w_n360/ship_test.sh
 ```
-
