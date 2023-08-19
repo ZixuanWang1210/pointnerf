@@ -27,6 +27,8 @@ git clone https://e.coding.net/thu-sig-cop/robotgrasping/pointnerf.git
 ### 下载预训练模型
 从百度网盘下载checkpoints，并解压到项目的根目录
 
+链接: https://pan.baidu.com/s/1j17EESa1GcYyI3U2dkn_Sg?pwd=ym9s 提取码: ym9s 
+
 目录结构如下所示：
 
 ```
@@ -42,6 +44,8 @@ pointnerf
 
 ### 下载数据集
 从百度网盘下载data_src，并解压到项目根目录
+
+链接: https://pan.baidu.com/s/1agNim4sDUakr62CKdtu-4w?pwd=meni 提取码: meni 
 
 目录结构如下所示：
 ```
